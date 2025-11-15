@@ -3,7 +3,7 @@
 
 Members: 
   1) Varsha U. (discord: @peachtea1910)
-  2)
+  2) littlemissbell34 (discord: @littlemissbell)
   3)
   4)
   5)
