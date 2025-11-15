@@ -7,3 +7,9 @@ Members:
   3)
   4)
   5)
+
+## Vite + React Project
+## Installation on local device
+```bash
+npm install
+npm run dev
