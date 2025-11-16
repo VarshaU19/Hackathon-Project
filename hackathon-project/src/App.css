@@ -1,35 +1,55 @@
-.App {
-  max-width: 1280px;
-  margin: 2rem auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: #ddd;
+.WebPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.WordGenerator {
-  align-items: center;
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #5becff;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.WordGeneratorBox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
   background-color: #f9f9f9;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: auto;
+}
+
+#generatorTitle {
+  font-size: 50px;
+  font-style: italic;
+  padding: 15px;
+  color:rgb(4, 71, 43)
+}
+
+.ResultWord {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 15px;
+  color: #c2044d;
 }
 
 button {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #dd0000;
-}
-.ResultWord {
-  align-items: center;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  padding: 1rem;
-  margin: 1rem 0 0 0;
-  font-size: 2.5rem;
-  color: #0e7900;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px;
+  cursor: pointer;
+  border-radius: 8px;
 }

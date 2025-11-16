@@ -1,9 +1,12 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import Words from './assets/words.json';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 export function WordGenerator() {
-    const [CurrentWord, SetCurrentWord] = useState("");
+    const [CurrentWord, setCurrentWord] = useState("");
+    const [showButton, setShowButton] = useState(false);
+    const navigate = useNavigate();
 
 
     const GenerateWord = () => {
@@ -12,10 +15,12 @@ export function WordGenerator() {
     };
 
     return (
-        <div>
-            <h1 id="generatorTitle">Random Word Generator</h1>
-            <button onClick={() => SetCurrentWord(GenerateWord())}> Get a Word </button>
+        <div id="WordGeneratorBox">
+            <h1 id="generatorTitle">Draw the Word!</h1>
+            <button onClick={() => {setCurrentWord(GenerateWord()); setShowButton(true);}}> Get a Word! </button>
             <p className="ResultWord">{CurrentWord}</p>
+                {showButton && (<button id="toCanvasButton" onClick={() => navigate('/canvas')}> Start Drawing!</button>)}
+                {showButton && (<button className="NewWord" onClick={() => setCurrentWord(GenerateWord())}> New Word</button>)}
         </div>
     );
 }
