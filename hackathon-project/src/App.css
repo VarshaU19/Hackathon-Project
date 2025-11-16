@@ -8,7 +8,7 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #5becff;
+  background-color: #72dbaa;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
@@ -54,11 +54,17 @@ button {
   border-radius: 8px;
 }
 
-.CanvasArea{
-
-  border: 25px solid black;
-  border-radius: 10px;
+#CanvasBox{
+  border: 30px solid black;
+  border-radius: 50px;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: auto;
+}
+
+#canvasTitle{
+  font-size: 40px;
+  font-style: italic;
+  color:rgb(4, 71, 43);
+  border-bottom: 25px solid black;
+  margin: 0px;
+  padding: 25px;
 }
